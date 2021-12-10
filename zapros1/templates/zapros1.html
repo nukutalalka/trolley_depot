@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>zapros 1</title>
+
+</head>
+<body>
+      <tr>
+         <td align = center> Фамилии сотрудников </td>
+      </tr>
+  {%for employee in employees%}
+    <tr>
+        <td align=center>{{employee['surname']}}</td>
+    </tr>
+  {% endfor %}
+
+    <a href="/menu">Назад в меню</a>
+</body>
+</html>
