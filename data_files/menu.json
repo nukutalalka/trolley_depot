@@ -1,0 +1,11 @@
+[{"name" : "Request 1", "url" : "?point=1"},
+{"name" : "Request 2", "url" : "?point=2"},
+{"name" : "Request 3", "url" : "?point=3"},
+{"name" : "Request 4", "url" : "?point=4"},
+{"name" : "Request 5", "url" : "?point=5"},
+{"name" : "Request 6", "url" : "?point=6"},
+{"name" : "Make report", "url" : "?point=7"},
+{"name": "Create schedule","url":"?point=9"},
+{"name": "Create crew","url":"?point=10"},
+{"name" : "Exit", "url" : "?point=11"}]
+

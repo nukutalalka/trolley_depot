@@ -1,0 +1,23 @@
+<html>
+<title>Список бригады</title><body>
+  <div class = "request-box" align = "center">
+    <table border = 1>
+      <tr>
+           <td align = center> name </td>
+
+        </tr>
+        {%for str in basket%}
+        <tr>
+           <td align=center>{{str.choice_name}}</td>
+           <form action="" method=POST>
+             <input type = hidden name = toDel value={{str.choice_name}}>
+             <td><input type = submit value = 'Удалить' name = 'delete'></td>
+           </form>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href = "/basket">Back to choice list</a>
+  </div>
+</body>
+</html>

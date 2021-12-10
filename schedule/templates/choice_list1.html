@@ -1,0 +1,23 @@
+<html>
+<title>Создание расписания</title>
+<div align=center>Расписание на {{date}}.{{month}}.{{year}}</div><br>
+{%for item in items%}
+<form action='' method=POST>
+<div align=center>
+    <input type=hidden name=choice_name value={{item.name}}>
+    <input type=hidden name=choice_id value={{item.id}}>
+	{{item.name}} &nbsp
+	<input type=text name=quantity> &nbsp
+	<input type =submit value='Выбрать' name='choice'>
+</div>
+</form>
+{%endfor%}
+<form action='' method=POST>
+<div align=center>
+<input type=submit value='Показать расписание' name='show_schedule'>
+
+<input type=submit value='Поменять дату' name='change_date'>
+    <br>
+    <a href = "/menu">Вернуться в меню</a>
+</div>
+</form> </html>

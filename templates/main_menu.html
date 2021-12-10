@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main menu</title>
+</head>
+
+<body>
+	<div class = "content"  align=center>>
+		{%for m in menu%}
+		<div class = "zapros_block">
+			<a href = "{{m.url}}">{{m.name}}</a>
+		</div>
+		<br>
+		{%endfor%}
+	</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+<title>Расписание</title><body>
+  <div class = "request-box" align = "center">
+<div align=center>Расписание на {{date}}.{{month}}.{{year}}</div><br>
+    <table border = 1>
+      <tr>
+           <td align = center> Имя водителя </td>
+           <td align= center> Номер маршрута</td>
+
+        </tr>
+        {%for str in schedule%}
+        <tr>
+           <td align=center>{{str.choice_name}}</td>
+           <td align=center>{{str.quantity}}</td>
+           <form action="" method=POST>
+             <input type = hidden name = toDel value={{str.choice_name}}>
+             <td><input type = submit value = 'Удалить' name = 'delete'></td>
+           </form>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <form action="" method=POST>
+    <input type=submit value='Оформить заказ' name='save'> <br>
+  </form>
+    <a href = "/schedule">Back to choice list</a>
+  </div>
+</body>
+</html>

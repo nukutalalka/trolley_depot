@@ -1,0 +1,20 @@
+<html>
+<title>Создание бригады</title>
+{%for item in items%}
+<form action='' method=POST>
+<div align=center>
+    <input type=hidden name=choice_name value={{item.name}}>
+    <input type=hidden name=choice_id value={{item.id}}>
+{{item.name}} &nbsp
+<input type =submit value='Выбрать' name='choice'>
+</div>
+</form>
+{%endfor%}
+<form action='' method=POST>
+<div align=center>
+<input type=submit value='Оформить заказ' name='save'> 
+<input type=submit value='Показать корзину' name='show_basket'>
+    <br>
+    <a href = "/menu">Back to menu</a>
+</div>
+</form> </html>
